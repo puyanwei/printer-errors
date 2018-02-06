@@ -5,6 +5,9 @@ describe("printer-error", function() {
   it("inputtng 'aa' should return '0/2'", function() {
     expect(printerError("aa")).toEqual("0/2");
   });
+  it("inputtng 'aaa' should return '0/3'", function() {
+    expect(printerError("aaa")).toEqual("0/3");
+  });
 });
 
 //count length of string
