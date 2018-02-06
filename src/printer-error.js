@@ -1,3 +1,3 @@
 var printerError = function() {
-  return "8/22";
+  return "0/1";
 };
