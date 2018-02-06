@@ -14,6 +14,12 @@ describe("printer-error", function() {
   it("inputting 'pq' should return '2/2'", function() {
     expect(printerError("pq")).toEqual("2/2");
   });
+  it("example 1 - inputting 'aaabbbbhaijjjm' should return '0/14'", function() {
+    expect(printerError("aaabbbbhaijjjm")).toEqual("0/14");
+  });
+  it("example 1 - inputting 'aaaxbbbbyyhwawiwjjjwwm' should return '8/22'", function() {
+    expect(printerError("aaaxbbbbyyhwawiwjjjwwm")).toEqual("8/22");
+  });
 });
 
 //count length of string
