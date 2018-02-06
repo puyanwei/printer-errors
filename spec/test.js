@@ -2,9 +2,9 @@ describe("printer-error", function() {
   it("inputtng 'a' should return '0/1'", function() {
     expect(printerError("a")).toEqual("0/1");
   });
-  // it("it should be false inputting test should not return 8/22", function() {
-  //   expect(printerError("test") === "8/22").toBe(false);
-  // });
+  it("inputtng 'aa' should return '0/2'", function() {
+    expect(printerError("aa")).toEqual("0/2");
+  });
 });
 
 //count length of string
