@@ -11,6 +11,9 @@ describe("printer-error", function() {
   it("inputting 'p' should return '1/1'", function() {
     expect(printerError("p")).toEqual("1/1");
   });
+  it("inputting 'pq' should return '2/2'", function() {
+    expect(printerError("pq")).toEqual("2/2");
+  });
 });
 
 //count length of string

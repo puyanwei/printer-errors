@@ -1,6 +1,9 @@
 var printerError = function(string) {
-  if (string === "p") {
-    return "1/" + string.length;
+  var count = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) > "m") {
+      count++;
+    }
   }
-  return "0/" + string.length;
+  return count + "/" + string.length;
 };
