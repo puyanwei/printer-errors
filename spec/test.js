@@ -5,8 +5,11 @@ describe("printer-error", function() {
   it("inputtng 'aa' should return '0/2'", function() {
     expect(printerError("aa")).toEqual("0/2");
   });
-  it("inputtng 'aaa' should return '0/3'", function() {
-    expect(printerError("aaa")).toEqual("0/3");
+  it("inputting '123456789' should return '0/9'", function() {
+    expect(printerError("123456789")).toEqual("0/9");
+  });
+  it("inputting 'p' should return '1/1'", function() {
+    expect(printerError("p")).toEqual("1/1");
   });
 });
 
